@@ -7,7 +7,6 @@ let env = process.env.NODE_ENV;
 // 看到项目各模块的大小，可以按需优化
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
-  mode: 'development',
   //*?Vue CLI 会假设你的应用是被部署在一个域名的根路径上，例如 https://www.my-app.com/。如果应用被部署在一个子路径上，你就需要用这个选项指定这个子路径
   publicPath: '/production-sub-path/',
   outputDir: 'dist', //修改打包文件所在的目录名称 
@@ -66,16 +65,16 @@ module.exports = {
     // hot: false //热更新
     // progress: true, //编译的进度条
     // 配置跨域
-    proxy: {
-      '/workshop/list': {
-        target: 'https://www.easy-mock.com/mock/5b4590d46039fe6f1bc80f13/portal', //接口域名地址
-        changeOrigin: true, //是否需要托管站点 
-        pathRewrite: { //是否重定向
-          '^/workshop/list': '/workshop/list'
-        }
-      }
+    // proxy: {
+    //   '/workshop/list': {
+    //     target: 'https://www.easy-mock.com/mock/5b4590d46039fe6f1bc80f13/portal', //接口域名地址
+    //     changeOrigin: true, //是否需要托管站点 
+    //     pathRewrite: { //是否重定向
+    //       '^/workshop/list': '/workshop/list'
+    //     }
+    //   }
 
-    }
+    // }
   }
 
 

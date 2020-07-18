@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import axios from 'axios'
+// import axios from 'axios'
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
@@ -16,10 +16,10 @@ export default {
     HelloWorld
   },
   mounted() {
-    axios.get('/workshop/list').then(res => {
+    this.axios.get('/workshop/list').then(res => {
       console.log(res, 'res')
     })
-    console.log('test11123')
+    console.log('test111234')
   }
 }
 </script>
