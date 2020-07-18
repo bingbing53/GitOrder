@@ -19,7 +19,7 @@ export default {
     axios.get('/workshop/list').then(res => {
       console.log(res, 'res')
     })
-    console.log('test')
+    console.log('test111')
   }
 }
 </script>
