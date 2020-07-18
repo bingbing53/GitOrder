@@ -19,7 +19,11 @@ export default {
     this.axios.get('/workshop/list').then(res => {
       console.log(res, 'res')
     })
+<<<<<<< HEAD
     console.log('test111234')
+=======
+    console.log('test1112345')
+>>>>>>> 3863070d1c65664e6997c18cefc0046c103b09cd
   }
 }
 </script>
